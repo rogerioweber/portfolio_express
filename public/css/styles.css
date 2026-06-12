@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(to right, #25598d 0%, #1e3c72 50%, #20426e 100%);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 5%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.8);
+  z-index: 9999;
+}
+
+.menuBtn {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #14b8a6;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #94a3b8;
+  transition: 0.3s;
+}
+
+/* HERO */
+.hero {
+  min-height: 80vh;
+  padding-top: 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro {
+  color: #14b8a6;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 40%;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 5%;
+  min-height: auto;
+  border: 10px solid #1e3c72;
+  scroll-margin-top: 90px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #14b8a6;
+}
+
+/* SOBRE */
+.sobre-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagemPerfil {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.sobreMim {
+  background: #111827;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(20, 184, 166, 0.1);
+  max-width: 700px;
+  text-align: justify;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* HABILIDADES */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.skill {
+  padding: 20px;
+  background: #111827;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+  text-align: center;
+}
+
+.skill:hover {
+  border-color: #14b8a6;
+  box-shadow: 0 0 15px rgba(20, 184, 166, 0.3);
+}
+
+/* PROJETOS */
+.carouselAll {
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+}
+
+.cards {
+  min-width: 100%;
+  background: #111827;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cards img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.projectContent {
+  background: #111827;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+.projectContent p {
+  text-align: justify;
+}
+
+.btnProjeto {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #04d9c4;
+  color: #0a0a0a;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btnProjeto:hover {
+  background: #00b5a5;
+  transform: scale(1.05);
+}
+
+.btn {
+  display: block;
+  margin: 40px auto 0 auto;
+}
+
+button {
+  background: #111827;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #14b8a6;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prev,
+.next {
+  border-radius: 5px;
+}
+
+/* CONTATO */
+.contatoSection {
+  margin-top: 70px;
+  text-align: center;
+  padding: 60px 5%;
+  color: #ffffff;
+}
+
+.contatoSection h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #14b8a6;
+}
+
+.contatoDescription {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #9ca3af;
+  font-size: 15px;
+}
+
+.contatoBox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.contatoCard {
+  background: #0b1224;
+  border: 1px solid rgba(45, 212, 191, 0.15);
+  border-radius: 12px;
+  padding: 25px 20px;
+  overflow: hidden;
+}
+
+.contatoCard:hover {
+  border-color: #14b8a6;
+  box-shadow: 0 0 15px rgba(20, 184, 166, 0.3);
+}
+
+.contatoCard h3 {
+  color: #14b8a6;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contatoCard p {
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+.contatos {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
+
+  .menuBtn {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #0f172a;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    display: none;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+}
