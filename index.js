@@ -3,6 +3,8 @@ const exphbs = require("express-handlebars");
 
 const app = express();
 
+const PORT = process.env.PORT || 3000;
+
 app.engine("handlebars", exphbs.engine());
 
 app.set("view engine", "handlebars");
@@ -29,6 +31,6 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
-app.listen(3000, () => {
-  console.log("App funcionando");
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
 });
